@@ -15,8 +15,8 @@ function wrapWindowByMask() {
     });
 
     //애니메이션 효과
-    //$('#mask').fadeIn(1000);      
-    $('#mask').fadeTo("slow", 0.5);
+    // $('#mask').fadeIn(1000);      
+    $('#mask').fadeTo("fast", 0.5);
 }
 
 function popupOpen() {
@@ -24,7 +24,7 @@ function popupOpen() {
     //영역 가운에데 레이어를 뛰우기 위해 위치 계산 
     $('.layerpop').css("top",(($(window).height() - $('.layerpop').outerHeight()) / 2) + $(window).scrollTop());
     $('.layerpop').css("left",(($(window).width() - $('.layerpop').outerWidth()) / 2) + $(window).scrollLeft());
-    $('.layerpop').draggable();
+    // $('.layerpop').draggable();
     $('#layerbox').show();
 }
 
